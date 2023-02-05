@@ -1,4 +1,13 @@
-div {
+html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#page1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -9,7 +18,6 @@ div {
 	height: 100vh;
     color: white;
     font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 @keyframes gradient {
@@ -24,13 +32,56 @@ div {
 	}
 }
 
-body {
-    margin: 0;
-}
+.presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} 
+
+
 
 .pp {
     width: 200px;
     margin-left: 30px;
     border-radius: 9999px;
 
+}
+
+a {
+    position: absolute;
+    bottom: 50px;
+    
+}
+
+button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.arrow {
+    display: block;
+    animation: falling 1.5s ease infinite;
+}
+
+@keyframes falling {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+}
+#page2 {
+    height: 100vh;
 }
